@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover Your World</title>
+    <link rel="icon" href="https://edube.org/uploads/media/default/0001/04/web-favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Discover Your World <span>&#128519;</span></h1>
+    <p>Click on your continent to learn about a famous geographical feature.</p>
+
+    <img src="https://edube.org/uploads/media/default/0001/04/continents.jpg" usemap="#image-map" alt="World Map">
+    <map name="image-map">
+        <area id="north-america" alt="North America" shape="rect" coords="41,17,386,283">
+        <area id="south-america" alt="South America" shape="rect" coords="209,288,358,501">
+        <area id="europe" alt="Europe" shape="rect" coords="391,68,505,217">
+        <area id="africa" alt="Africa" shape="rect" coords="387,217,533,448">
+        <area id="asia" alt="Asia" shape="rect" coords="506,1,893,153">
+        <area id="australia-and-oceania" alt="Australia and Oceania" shape="rect" coords="679,353,872,480">
+    </map>
+
+    <script>
+        const facts = {
+            "north-america": "North America – Famous feature: Grand Canyon.",
+            "south-america": "South America – Famous feature: Amazon Rainforest.",
+            "europe": "Europe – Famous feature: Eiffel Tower.",
+            "africa": "Africa – Famous feature: Sahara Desert.",
+            "asia": "Asia – Famous feature: Great Wall of China.",
+            "australia-and-oceania": "Australia & Oceania – Famous feature: Great Barrier Reef."
+        };
+
+        // Add click listeners to each area
+        for (let id in facts) {
+            const area = document.getElementById(id);
+            if (area) {
+                area.addEventListener("click", function() {
+                    alert(facts[id]);
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
