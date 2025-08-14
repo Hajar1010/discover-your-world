@@ -1,5 +1,4 @@
 # Discover Your World
-
 A fun interactive web page that lets users click on a world map to learn about each continent and its famous geographical features. Built using HTML and JavaScript, this project demonstrates image maps and event handling in a simple, visual way.
 
 
@@ -21,3 +20,4 @@ A fun interactive web page that lets users click on a world map to learn about e
 - HTML
 - CSS 
 - JavaScript
+
