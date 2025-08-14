@@ -18,6 +18,4 @@ A fun interactive web page that lets users click on a world map to learn about e
 ---
 ## Technologies Used
 - HTML
-- CSS 
-- JavaScript
 
